@@ -18,9 +18,9 @@ class Command(BaseCommand):
         user2 = User.objects.create(email='bob@merington.edu', name='Bob', password='bobpass')
         user3 = User.objects.create(email='carol@merington.edu', name='Carol', password='carolpass')
 
-        # Teams
-        team1 = Team.objects.create(name='Merington Tigers', members=[user1, user2])
-        team2 = Team.objects.create(name='Merington Lions', members=[user3])
+        # Teams (assign member emails, not objects, for ArrayField compatibility)
+        team1 = Team.objects.create(name='Merington Tigers', members=[user1.email, user2.email])
+        team2 = Team.objects.create(name='Merington Lions', members=[user3.email])
 
         # Activities
         Activity.objects.create(user=user1, activity_type='run', duration=30, date=timezone.now())
