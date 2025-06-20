@@ -1,0 +1,24 @@
+{
+  "users": [
+    {"email": "alice@example.com", "name": "Alice", "password": "alicepass"},
+    {"email": "bob@example.com", "name": "Bob", "password": "bobpass"},
+    {"email": "carol@example.com", "name": "Carol", "password": "carolpass"}
+  ],
+  "teams": [
+    {"name": "Team Alpha", "members": ["alice@example.com", "bob@example.com"]},
+    {"name": "Team Beta", "members": ["carol@example.com"]}
+  ],
+  "activities": [
+    {"user": "alice@example.com", "activity_type": "run", "duration": 30, "date": "2025-06-20T08:00:00Z"},
+    {"user": "bob@example.com", "activity_type": "walk", "duration": 45, "date": "2025-06-20T09:00:00Z"}
+  ],
+  "workouts": [
+    {"user": "alice@example.com", "workout_type": "yoga", "duration": 60, "date": "2025-06-20T10:00:00Z"},
+    {"user": "carol@example.com", "workout_type": "cycling", "duration": 50, "date": "2025-06-20T11:00:00Z"}
+  ],
+  "leaderboard": [
+    {"user": "alice@example.com", "score": 120, "rank": 1},
+    {"user": "bob@example.com", "score": 100, "rank": 2},
+    {"user": "carol@example.com", "score": 80, "rank": 3}
+  ]
+}
